@@ -1,4 +1,4 @@
-'''Full-Stack Task Manager
+Full-Stack Task Manager
 
 A clean, modern, and fully functional To-Do application built to demonstrate the fundamentals of full-stack web development. [cite: 409] This project connects a vanilla web frontend to a custom RESTful API built with Node.js and Express. [cite: 410]
 
@@ -12,10 +12,13 @@ Features
 Project Structure
 The codebase is strictly separated into frontend and backend environments to maintain a clean architecture: [cite: 417]
 
+```text
 task-manager/
+│
 ├── backend/
 │   ├── package.json
 │   └── index.js
+│
 └── frontend/
     ├── index.html
     ├── style.css
@@ -45,4 +48,3 @@ The backend handles the following RESTful routes: [cite: 423]
 
 Future Improvements (Phase 3)
 Currently, this application relies on an in-memory database. [cite: 428] Whenever the server is restarted, all newly created tasks are wiped clean. [cite: 429] The next step in development is to connect the backend to a persistent database (like MongoDB or a relational SQL database) so data is saved permanently to a hard drive. [cite: 430]
-'''
