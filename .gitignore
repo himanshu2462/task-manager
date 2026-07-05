@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (NEVER commit this to version control!)
+.env
+
+# OS generated files (Mac/Windows hidden files)
+.DS_Store
+Thumbs.db

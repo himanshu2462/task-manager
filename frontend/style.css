@@ -1,0 +1,126 @@
+/* Reset basic browser defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create a nice off-white background and center everything */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* The main app card with soft shadows */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f2937;
+    font-size: 28px;
+}
+
+/* Align the input and button nicely */
+.controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 14px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Highlight the input blue when typing */
+input:focus {
+    border-color: #3b82f6;
+}
+
+.add-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-btn:hover {
+    background-color: #2563eb;
+}
+
+.add-btn:active {
+    transform: scale(0.97);
+}
+
+/* Modern styling for individual task rows */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.task:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+.task-text {
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+/* How a completed task looks */
+.completed {
+    background-color: #f9fafb;
+    border-color: #f3f4f6;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
