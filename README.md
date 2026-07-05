@@ -11,7 +11,9 @@ Features
 
 Project Structure
 The codebase is strictly separated into frontend and backend environments to maintain a clean architecture: [cite: 417]
+
 task-manager/
+
 ├── backend/
 │   ├── package.json
 │   └── index.js
